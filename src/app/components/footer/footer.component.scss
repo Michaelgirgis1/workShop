@@ -1,0 +1,100 @@
+.main-footer {
+    padding: 75px 220px 130px 266px;
+    background-color: #000;
+    .main-footer__conatiner {
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+                margin-bottom: 20px;
+            
+
+            }
+        }
+        li,
+        p {
+            color: rgba($color: #fff, $alpha: 0.5);
+            font-size: calc(14px + (16 - 14) * ((100vw - 768px) / (1920 - 768)));
+            margin: 0;
+
+        }
+        .main-footer__news-update__container {
+
+            >p {
+                margin-bottom: 75px;
+            }
+        }
+        h5 {
+            font-size: calc(22px + (28 - 22) * ((100vw - 768px) / (1920 - 768)));
+            color: rgba($color: #fff, $alpha: 0.8);
+            margin: 0;
+            margin-bottom: 35px;
+
+        }
+    }
+    .main-footer__news-update {
+        padding: 0 0 0 30px;
+    }
+    .main-footer__news-update__input {
+        display: flex;
+        input {
+            padding: 10px 19px;
+            font-size: calc(16px + (20 - 16) * ((100vw - 768px) / (1920 - 768)));
+            color: #000;
+            &:focus-visible {
+                outline: 0;
+            }
+
+        }
+        .generic-btn--footer {
+            border-color: #2C4F3F;
+            background-color: #2C4F3F;
+            color: white;
+            text-transform: unset;
+            border-radius: 0;
+            min-width: 125px;
+        }
+    }
+    .main-footer__news-update__send {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            font-size: calc(18px + (22 - 18) * ((100vw - 768px) / (1920 - 768)));
+            width: 65%;
+
+        }
+        .icon-news {
+            font-size: calc(30px + (38 - 30) * ((100vw - 768px) / (1920 - 768)));
+            margin-bottom: 20px;
+
+        }
+    }
+}
+
+
+@media (max-width: 1366px) {
+    .main-footer {
+        padding: 65px 100px 110px 120px;
+        .main-footer__conatiner {
+        
+            .main-footer__news-update__container {
+    
+                >p {
+                    margin-bottom: 65px;
+                }
+            }
+            h5 {
+        
+                margin-bottom: 30px;
+    
+            }
+        }
+        .main-footer__news-update {
+            padding: 0 0 0 30px;
+        }
+     
+       
+    }
+}

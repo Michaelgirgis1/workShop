@@ -1,0 +1,49 @@
+@import './../../../assets/sass/variables';
+.main-banner {
+    background-image: url('../../../assets/images/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    margin-bottom: 28px;
+    .main-banner__content {
+        padding: 200px 0 0 200px;
+        width: 40%;
+        h1 {
+            margin: 0;
+            font-size: calc(35px + (55 - 35) * ((100vw - 768px) / (1920 - 768)));
+            color: $mainColor;
+            font-family: 'SegoeUIBold'; 
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #000;
+            font-family: 'SegoeUI';
+            font-size: calc(16px + (20 - 16) * ((100vw - 768px) / (1920 - 768)));
+            width: 78%;
+            margin-bottom: 35px;
+        }
+      
+    }
+
+} 
+
+
+
+@media (max-width: 1366px)  {
+    .main-banner {
+        min-height: 700px;
+        margin-bottom: 22px;
+        .main-banner__content {
+            padding: 150px 0 0 150px;
+            width: 45%;
+         
+            p {
+                margin-bottom: 30px;
+            }
+          
+        }
+    
+    } 
+    
+}

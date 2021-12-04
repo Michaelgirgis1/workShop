@@ -1,0 +1,54 @@
+@import '../../../assets/sass/variables';
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 85px 30px 200px;
+    .main-header__list__nav {
+        list-style: none;
+        .main-header__list__nav__item {
+            display: inline-flex;
+            a {
+                text-decoration: none;
+                font-family: 'SegoeUI'; 
+                color: #000;
+                font-size: calc(18px + (23 - 18) * ((100vw - 768px) / (1920 - 768)));
+                font-weight: 600;
+                position: relative;
+                &.active::before {
+                    position: absolute;
+                    content: '';
+                    display: block;
+                    height: 3px;
+                    width: 100%;
+                    background-color: $mainColor;
+                    bottom: -5px;
+                }
+            }
+            &:not(:last-child) {
+                a {
+                    margin-right: 65px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1366px) {
+    .main-header {
+        padding: 20px 65px 20px 150px;
+        .main-header__list__nav {
+            .main-header__list__nav__item {
+        
+                &:not(:last-child) {
+                    a {
+                        margin-right: 50px;
+                    }
+                }
+            }
+        }
+    }
+    
+
+}

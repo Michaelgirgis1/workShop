@@ -1,0 +1,66 @@
+@import '../../../assets/sass/variables';
+
+.benefits {
+    .benefits__content {
+        background-color: #3b6d51;
+        padding: 180px 0 550px;
+        .section-title {
+            color: #fff;
+        }
+        .row-wrapper {
+            > div {
+                border-right: 2px solid rgba(255, 255, 255, 0.1);
+                border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+                
+            }
+            > div:nth-child(3n) {
+                border-right:0;
+                
+            }
+            >div:nth-last-of-type(2),
+            >div:nth-last-of-type(3),
+            >div:last-child {
+                border-bottom:0;
+                
+            }
+            
+    
+        }
+        .benefits__item {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            align-items: center;
+            padding: 30px 50px;
+            .benefits__item__icon {
+                span {
+                    font-size: calc(55px + (75 - 55) * ((100vw - 768px) / (1920 - 768)));
+                }
+            }
+            p {
+                font-size: calc(23px + (29 - 23) * ((100vw - 768px) / (1920 - 768)));
+                color:rgb(255, 255, 255)
+            }
+        }
+
+    }
+
+}
+
+
+
+
+@media (max-width: 1366px) {
+    .benefits {
+        .benefits__content {
+            padding: 130px 0 500px;
+          
+            .benefits__item {
+                padding: 20px 35px;
+          
+            }
+    
+        }
+     
+    }
+}

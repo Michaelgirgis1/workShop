@@ -1,0 +1,75 @@
+
+
+<div class="contant-wrapper">
+
+
+<div class="content-container contact">
+
+    <div class="contact-us">
+
+        <div class="contact-us__header">
+            <h3 class="section-title under-line bold section-title--contact">Get in touch with us</h3>
+            <div class="contact-us__header__icon">
+                <span class="icon-facebook"></span>
+                <span class="icon-instagram"></span>
+                <span class="icon-twitter"></span>
+                <span class="icon-youtube"></span>
+
+            </div>
+
+        </div>
+        <div class="contact-us__form" *ngIf="!isFormSubmit">
+            <form action="">
+                <div class="row-wrapper">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="">Full name</label>
+                            <input type="text">
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="">Organization</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+
+                        <div class="form-group">
+                            <label for="">Phone number</label>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <div class="form-group">
+                            <label for="">Work email address</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+
+                        <div class="form-group">
+                            <label for=""> How we can help you?</label>
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-us__form__submit">
+                    <button class="generic-btn  generic-btn--submit" (click)="submitForm()">submit <span  class="icon-arrow"></span></button>
+                </div>
+
+            </form>
+        </div>
+        <div class="contact-us__success" *ngIf="isFormSubmit">
+           <img src="../../../assets/images/success.png" alt="success image">
+            <h4>Thanks for reaching out!</h4>
+            <p>Our team will contact you soon</p>
+
+        </div>
+    </div>
+</div>
+</div>
