@@ -3,7 +3,13 @@
         <img src="../../../assets/images/logo.png" alt="">
     </div>
     <div class="main-header__list">
-        <nav class="main-header__list__nav">
+        <button class="burger-menu " (click) = "showMenu()">
+            <img *ngIf= "!isMenuShow" src="../../../assets/images/burger-menu.png" alt="burger menu">
+            <img *ngIf= "isMenuShow"  src="../../../assets/images/menu-close.png" alt="burger menu close icon" srcset="">
+
+        </button>
+
+        <nav class="main-header__list__nav" [ngClass] = "isMenuShow? 'show': ''">
             <li class="main-header__list__nav__item"><a href="" class="active">Home</a></li>
             <li class="main-header__list__nav__item"><a href="">What is Fawateer?</a></li>
             <li class="main-header__list__nav__item"><a href="">Features</a></li>

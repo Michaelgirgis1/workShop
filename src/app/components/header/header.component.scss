@@ -1,5 +1,8 @@
-@import '../../../assets/sass/variables';
+@import "../../../assets/sass/variables";
 .main-header {
+    .burger-menu {
+        display: none;
+    }
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,14 +13,14 @@
             display: inline-flex;
             a {
                 text-decoration: none;
-                font-family: 'SegoeUI'; 
+                font-family: "SegoeUI";
                 color: #000;
                 font-size: calc(18px + (23 - 18) * ((100vw - 768px) / (1920 - 768)));
                 font-weight: 600;
                 position: relative;
                 &.active::before {
                     position: absolute;
-                    content: '';
+                    content: "";
                     display: block;
                     height: 3px;
                     width: 100%;
@@ -34,13 +37,11 @@
     }
 }
 
-
 @media (max-width: 1366px) {
     .main-header {
         padding: 20px 65px 20px 150px;
         .main-header__list__nav {
             .main-header__list__nav__item {
-        
                 &:not(:last-child) {
                     a {
                         margin-right: 50px;
@@ -49,6 +50,57 @@
             }
         }
     }
-    
+}
+@media (max-width: 768px) {
+    .main-header {
+        padding: 20px 30px 20px 70px;
+        position: relative;
 
+        .burger-menu {
+            display: block;
+            border: 0;
+            background: no-repeat;
+            padding: 0;
+            img {
+                height: 50px;
+            }
+        }
+     
+        .main-header__list__nav {
+            // display: none;
+            position: absolute;
+            width: 100%;
+            background: #fff;
+            transition: all 0.5s ease;
+            left: -100%;
+            list-style: none;
+            top: 110px;
+            &.show {
+             left: 0;
+
+            }
+            .main-header__list__nav__item {
+                display: flex;
+                padding: 20px 35px;
+                a {
+                    font-size: 21px;
+               
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .main-header {
+        padding: 20px 30px 20px 30px;
+
+        .burger-menu {
+            img {
+                height: 30px;
+            }
+        }
+     
+      
+    }
 }

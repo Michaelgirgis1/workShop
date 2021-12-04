@@ -20,3 +20,29 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .about {
+        padding: 10px 0 50px;
+        .about__content {
+            width: 55%;
+            p {
+                font-size: 16px;
+    
+                &.first {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .about {
+        .about__content {
+            width: 80%;
+         
+        }
+    }
+}

@@ -1,5 +1,5 @@
 .services {
-    background-color: #F5F7F6;
+    background-color: #f5f7f6;
     padding: 65px 0 25px;
     display: flex;
     justify-content: center;
@@ -14,8 +14,7 @@
                 .circle-dot {
                     margin-right: 10px;
                     &:last-child {
-                      margin-right: 0px;
-    
+                        margin-right: 0px;
                     }
                 }
             }
@@ -29,27 +28,21 @@
             .icon-flag,
             .icon-accurate {
                 font-size: calc(50px + (79 - 50) * ((100vw - 768px) / (1920 - 768)));
-
             }
             .icon-secure {
                 font-size: calc(50px + (71 - 50) * ((100vw - 768px) / (1920 - 768)));
-
             }
             h3 {
                 font-size: calc(23px + (29 - 23) * ((100vw - 768px) / (1920 - 768)));
-                font-family: 'SegoeBold';
+                font-family: "SegoeBold";
                 margin: 0 0 15px;
-
             }
             p {
                 font-size: calc(16px + (20 - 16) * ((100vw - 768px) / (1920 - 768)));
-
             }
-
         }
     }
 }
-
 
 @media (max-width: 1366px) {
     .services {
@@ -58,9 +51,67 @@
             width: 75%;
             .services__item {
                 padding: 0 20px;
-         
-               
-    
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        padding: 45px 0 20px;
+        .services__container {
+            width: 86%;
+            .services__item {
+                padding: 0 20px;
+
+                // .services__item__icon {
+                //     min-height: 85px;
+                //     display: flex;
+                //     align-items: center;
+                //     margin-bottom: 15px;
+                // }
+                .icon-digital,
+                .icon-flag,
+                .icon-accurate {
+                    font-size: 50px;
+                }
+                .icon-secure {
+                    font-size: 50px;
+                }
+                h3 {
+                    font-size: 23px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .services {
+        .services__container {
+            width: 95%;
+            .services__item {
+                padding: 0 10px;
+                .services__item__icon {
+                    min-height: 60px;
+                }
+                .icon-digital,
+                .icon-flag,
+                .icon-accurate {
+                    font-size: 40px;
+                }
+                .icon-secure {
+                    font-size: 40px;
+                }
+                h3 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 14px;
+                }
             }
         }
     }

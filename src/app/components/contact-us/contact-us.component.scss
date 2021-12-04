@@ -1,5 +1,4 @@
-@import '../../../assets/sass/variables';
-
+@import "../../../assets/sass/variables";
 
 .contant-wrapper {
     .contact-us {
@@ -20,10 +19,8 @@
                     font-size: calc(35px + (45 - 35) * ((100vw - 768px) / (1920 - 768)));
                     margin-right: 20px;
                     &:last-child {
-                      margin-right: 0px;
-    
+                        margin-right: 0px;
                     }
-    
                 }
             }
         }
@@ -33,12 +30,10 @@
                 .col-lg-6:nth-child(odd) {
                     padding-right: 75px;
                     padding-left: 0px;
-    
                 }
                 .col-lg-6:nth-child(even) {
                     padding-left: 75px;
                     padding-left: 0px;
-    
                 }
             }
             form {
@@ -55,22 +50,20 @@
                     textarea {
                         width: 100%;
                         height: 150px;
-    
                     }
                     label {
-                      font-size: calc(20px + (25 - 20) * ((100vw - 768px) / (1920 - 768)));
-                      color: #000;
-                      margin-bottom: 10px;
-                      font-weight: bold;
-    
+                        font-size: calc(20px + (25 - 20) * ((100vw - 768px) / (1920 - 768)));
+                        color: #000;
+                        margin-bottom: 10px;
+                        font-weight: bold;
                     }
                     input,
                     textarea {
                         border: 0;
-                        border-bottom: 2px solid #D1D1D1;
+                        border-bottom: 2px solid #d1d1d1;
                         padding: 10px;
                         font-size: calc(20px + (25 - 20) * ((100vw - 768px) / (1920 - 768)));
-    
+
                         &:focus-visible {
                             outline: 0;
                         }
@@ -88,7 +81,7 @@
         }
         .contact-us__success {
             min-height: 800px;
-            background-image: url('../../../assets/images/success-bg.png');
+            background-image: url("../../../assets/images/success-bg.png");
             background-size: contain;
             background-repeat: no-repeat;
             width: 65%;
@@ -105,13 +98,10 @@
             h4 {
                 font-size: calc(20px + (28 - 20) * ((100vw - 768px) / (1920 - 768)));
                 margin: 0;
-
             }
         }
     }
-
 }
-
 
 @media (max-width: 1366px) {
     .contant-wrapper {
@@ -120,16 +110,14 @@
             transform: translateY(-330px);
             .contact-us__header {
                 margin-bottom: 90px;
-             }
+            }
             .contact-us__form {
                 .row-wrapper {
                     .col-lg-6:nth-child(odd) {
                         padding-right: 65px;
-        
                     }
                     .col-lg-6:nth-child(even) {
                         padding-left: 65px;
-        
                     }
                 }
                 form {
@@ -140,18 +128,120 @@
                         }
                         textarea {
                             height: 120px;
-        
                         }
                     }
                 }
-      
             }
             .contact-us__success {
                 min-height: 700px;
                 width: 70%;
-         
             }
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .contant-wrapper {
+        .contact-us {
+            padding: 40px 35px;
+            transform: translateY(-200px);
+            .contact-us__header {
+                // margin-bottom: 50px;
+                .contact-us__header__icon {
+                    span {
+                        font-size: 25px;
+                        margin-right: 15px;
+                    }
+                }
+            }
+            .contact-us__form {
+                .row-wrapper {
+                    .col-lg-6:nth-child(odd) {
+                        padding-right: 35px;
+                    }
+                    .col-lg-6:nth-child(even) {
+                        padding-left: 35px;
+                    }
+                }
+                form {
+                    .form-group {
+                        margin-bottom: 35px;
+                        &:last-child {
+                            margin-bottom: 80px;
+                        }
+                        textarea {
+                            height: 80px;
+                        }
+
+                        label {
+                            font-size: 16px;
+                        }
+                        input,
+                        textarea {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .contact-us__success {
+                min-height: 600px;
+                width: 70%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .contant-wrapper {
+        .contact-us {
+            padding: 40px 15px;
+            transform: translateY(-200px);
+            .contact-us__header {
+                margin-bottom: 50px;
+                flex-direction: column;
+
+                .contact-us__header__icon {
+                    padding-top: 50px;
+                 
+                }
+            }
+            .contact-us__form {
+                .row-wrapper {
+                    .col-lg-6:nth-child(odd) {
+                        padding-right: 0;
+                    }
+                    .col-lg-6:nth-child(even) {
+                        padding-left: 0;
+                    }
+                    .col-sm-12 {
+                        padding: 0;
+                    }
+                }
+                form {
+                    .form-group {
+                        margin-bottom: 20px;
+                        &:last-child {
+                            margin-bottom: 30px;
+                        }
+                        input,
+                        textarea {
+                            padding: 5px 10px;
+                            font-size: 18px;
     
+                        }
+                     
+                   
+                    }
+                }
+            }
+            .contact-us__success {
+                min-height: 500px;
+                width: 85%;
+            }
+            .contact-us__success {
+                text-align: center;
+            }
+        }
     }
 }
